@@ -15,8 +15,8 @@ import { dataProvider } from "./providers/data";
 import Dashboard from "./pages/Dashboard";
 import { BookOpen, Home } from "lucide-react";
 import { Layout } from "./components/refine-ui/layout/layout";
-import SubjectsList from "./pages/subjects/SubjectsList";
-import SubjectsCreate from "./pages/subjects/SubjectsCreate";
+import SubjectsList from "./pages/subjects/List";
+import SubjectsCreate from "./pages/subjects/create";
 
 function App() {
   return (
@@ -57,7 +57,7 @@ function App() {
 
                   <Route path="subjects">
                     <Route index element={<SubjectsList />}></Route>
-                    <Route path="SubjectsCreate" element={<SubjectsCreate />}></Route>
+                    <Route path="create" element={<SubjectsCreate />}></Route>
                   </Route>
                 </Route>
               </Routes>
